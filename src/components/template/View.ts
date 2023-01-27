@@ -5,6 +5,6 @@ export const View = styled.div`
   flex-direction: column;
   max-width: 440px;
   min-height: 100vh;
-  padding: 20px;
+  padding: 32px 20px;
   margin: 0 auto;
 `
