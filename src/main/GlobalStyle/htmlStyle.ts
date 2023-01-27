@@ -9,7 +9,7 @@ export const htmlStyle = css`
   body {
     background-color: #0d0d0d;
     color: white;
-    font-family: sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
   }
 
   body,
