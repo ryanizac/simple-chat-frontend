@@ -6,5 +6,6 @@ export const cssReset = css`
     margin: 0;
     border: none;
     box-sizing: border-box;
+    background: none;
   }
 `
