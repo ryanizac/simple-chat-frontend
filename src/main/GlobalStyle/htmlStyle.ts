@@ -1,6 +1,10 @@
 import { css } from 'styled-components'
 
 export const htmlStyle = css`
+  * {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
   html,
   body {
     margin: 0;
@@ -9,7 +13,6 @@ export const htmlStyle = css`
   body {
     background-color: #0d0d0d;
     color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
   }
 
   body,
