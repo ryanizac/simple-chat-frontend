@@ -8,8 +8,13 @@ const ColumnContainer = styled.div`
 
 type ColumnProps = {
   children: ReactNode
+  className?: string
 } & CSSProperties
 
-export function Column({ children, ...style }: ColumnProps) {
-  return <ColumnContainer style={style}>{children}</ColumnContainer>
+export function Column({ children, className, ...style }: ColumnProps) {
+  return (
+    <ColumnContainer className={className} style={style}>
+      {children}
+    </ColumnContainer>
+  )
 }
