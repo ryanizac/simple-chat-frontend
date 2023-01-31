@@ -1,7 +1,11 @@
 import { ImageFileSvg } from '@/assets/svg/ImageFileSvg'
-import { Form, InputGroup, Label } from '@/components/form'
+import { Circle } from '@/components/Circle'
+import { PrimaryButton } from '@/components/buttons/PrimaryButton'
+import { Form, Input, InputGroup, Label } from '@/components/form'
 import { InputImage } from '@/components/form/InputImage'
+import { InputRadioButton } from '@/components/form/InputRadioButton'
 import { H2 } from '@/components/template/H2'
+import { Row } from '@/components/template/Row'
 
 type UserChatFormProps = {}
 
@@ -18,6 +22,20 @@ export function UserChatForm(props: UserChatFormProps) {
           <ImageFileSvg />
         </InputImage>
       </InputGroup>
+      <InputGroup>
+        <Label>Status</Label>
+        <Row gap={16}>
+          <InputRadioButton name="status" value="online" defaultChecked>
+            <Circle size={8} background="green" />
+            Online
+          </InputRadioButton>
+          <InputRadioButton name="status" value="offline">
+            <Circle size={8} background="red" />
+            Offline
+          </InputRadioButton>
+        </Row>
+      </InputGroup>
+      <PrimaryButton>Continue</PrimaryButton>
     </Form>
   )
 }
