@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.a`
+export const Container = styled.button`
   text-decoration: none;
   background-color: #0066ff;
   text-align: center;
