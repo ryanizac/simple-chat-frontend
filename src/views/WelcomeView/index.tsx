@@ -5,6 +5,7 @@ import { Column } from '@/components/template/Column'
 import { SecondaryButton } from '@/components/buttons/SecondaryButton'
 import { VersionText } from '@/components/VersionText'
 import { Container } from './styles'
+import { Link } from 'react-router-dom'
 
 export function WelcomeView() {
   return (
@@ -17,7 +18,9 @@ export function WelcomeView() {
         </Paragraph>
       </Column>
       <Column gap={16}>
-        <PrimaryButton>Signup locally</PrimaryButton>
+        <Link to="/signup/locally">
+          <PrimaryButton>Signup locally</PrimaryButton>
+        </Link>
         <SecondaryButton>Login locally</SecondaryButton>
       </Column>
       <Column alignSelf="center" marginTop="auto">
